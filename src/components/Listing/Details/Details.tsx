@@ -25,7 +25,7 @@ const Details = ({ property }: Props) => {
           {property.address}, {property.city}, {property.postcode}
         </p>
       </div>
-      <button>Investment</button>
+      <div className={styles.investment}>Investment</div>
     </div>
   );
 };
