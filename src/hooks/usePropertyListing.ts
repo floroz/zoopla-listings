@@ -82,6 +82,7 @@ const usePropertyListing = () => {
     properties: state.properties,
     retryFetch: fetchProperties,
     loading: state.loading,
+    error: state.error,
   };
 };
 
