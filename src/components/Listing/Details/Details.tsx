@@ -17,12 +17,14 @@ const Details = ({ property }: Props) => {
         <h6>£{price}</h6>
       </div>
       <IconsGroup />
-      <p className={styles.info}>
-        {property.beds} bed {property.type} for sale
-      </p>
-      <p className={styles.address}>
-        {property.address}, {property.city}, {property.postcode}
-      </p>
+      <div>
+        <p className={styles.info}>
+          {property.beds} bed {property.type} for sale
+        </p>
+        <p className={styles.address}>
+          {property.address}, {property.city}, {property.postcode}
+        </p>
+      </div>
       <button>Investment</button>
     </div>
   );

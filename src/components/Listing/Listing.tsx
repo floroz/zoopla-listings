@@ -13,7 +13,7 @@ const Listing = ({ property }: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.listing}>
-        <ImgPreview images={property.images} />
+        <ImgPreview images={property.images} expired={property.expired} />
         <Details property={property} />
       </div>
       <BottomBar listed={property.listed} />

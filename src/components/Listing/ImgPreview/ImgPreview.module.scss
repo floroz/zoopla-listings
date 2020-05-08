@@ -1,6 +1,22 @@
 .container {
   position: relative;
 
+  .expired {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+    span {
+      text-transform: uppercase;
+      background-color: rgba(red, 0.65);
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 700;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+    }
+  }
+
   .img {
     max-width: 100%;
     min-width: 15rem;

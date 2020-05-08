@@ -28,12 +28,30 @@
       "postcode": "NW3",
       "listed": "2020-08-02T23:00:00.000Z",
       "description": "A 1 bedroom apartment situated on the second floor of a popular purpose built block with lift access and a porter. Offering 612 sq ft of internal accommodation, this bright 1 bedroom apartment is conveniently located between Chalk Farm, Belsize Park and Primrose Hill. There is first come first serve parking as well as permit parking locally. Owing to our commitment to keep both our colleagues and clients safe during this period of recommended isolation, we have many self-serve viewing options available to you. These include video walkthroughs, 360 virtual reality viewings and enhanced comprehensive photography. Eton College Road is 0.2 miles from Chalk Farm Underground Station Northern Line and 0.9 miles from Swiss Cottage Underground Station Jubilee Line. The amenities on England's Lane and Primrose Hill are within walking distance.",
-      "expired": false,
+      "expired": true,
       "images": [
         "https://lid.zoocdn.com/645/430/4d8032bac1fc7b21803567011a52b51cce9f997a.jpg",
         "https://lid.zoocdn.com/645/430/f0377ddbd3ae25d36a537bc570033c87f5050434.jpg",
         "https://lid.zoocdn.com/645/430/d42e327d96a48d1b826d6a93706ebc96f56ec8f2.jpg",
         "https://lid.zoocdn.com/645/430/f4342aa4f1d2aea1d2c370531a9e114c8617cdac.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "price": 675000,
+      "beds": 1,
+      "type": "flat",
+      "address": "Eton Hall, Eton College Road",
+      "city": "London",
+      "postcode": "NW3",
+      "listed": "2020-08-02T23:00:00.000Z",
+      "description": "Beautifully finished three bedroom, two bathroom apartment offering refurbished interiors and set within the highly regarded Eton Hall Mansion Block. Eton Hall features lift access, sprawling communal gardens and on grounds resident parking. Eton College Road is a highly sought-after location in NW3 moments from stunning Primrose Hill and central Camden Town with Chalk Farm Underground Station only moments away.",
+      "expired": false,
+      "images": [
+        "https://lid.zoocdn.com/645/430/2e0a94b193b697619dbcbefe3cf2b5e8a69884c3.jpg",
+        "https://lid.zoocdn.com/645/430/2a74b6d9b32770638e737f56fe55e663866b6350.jpg",
+        "https://lid.zoocdn.com/645/430/277a265648f0004120191b260a484ef1563526b1.jpg",
+        "https://lid.zoocdn.com/645/430/67223d4c8f0de98cdfc5e18497d7a4487063f93f.jpg"
       ]
     }
   ]

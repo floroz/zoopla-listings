@@ -8,6 +8,8 @@ enum FetchProperties {
   SUCCESS = "SUCCESS",
   START = "START",
   ERROR = "ERROR",
+  SHOW_EXPIRED = "SHOW_EXPIRED",
+  SHOW_LIVE = "SHOW_LIVE",
 }
 
 interface IAction {
@@ -46,6 +48,16 @@ function reducer(state: IPropertyListingState = initialState, action: IAction) {
         loading: false,
         error: action.payload,
       };
+    case FetchProperties.SHOW_EXPIRED:
+      return {
+        ...state,
+        properties: state.properties?.filter((prop) => prop.expired),
+      };
+    case FetchProperties.SHOW_LIVE:
+      return {
+        ...state,
+        properties: state.properties?.filter((prop) => !prop.expired),
+      };
     default:
       return state;
   }
@@ -53,6 +65,18 @@ function reducer(state: IPropertyListingState = initialState, action: IAction) {
 
 const usePropertyListing = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  const showExpired = () => {
+    dispatch({
+      type: FetchProperties.SHOW_EXPIRED,
+    });
+  };
+
+  const showLive = () => {
+    dispatch({
+      type: FetchProperties.SHOW_LIVE,
+    });
+  };
 
   const fetchProperties = useCallback(async function () {
     try {
@@ -83,6 +107,8 @@ const usePropertyListing = () => {
     retryFetch: fetchProperties,
     loading: state.loading,
     error: state.error,
+    showExpired,
+    showLive,
   };
 };
 
