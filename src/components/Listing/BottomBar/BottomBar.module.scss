@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+
+.bottomBar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+
+  .date span {
+    font-size: 1.5rem;
+    color: $text;
+  }
+  .save {
+    display: flex;
+    align-items: center;
+
+    span {
+      color: $tertiary;
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-left: 1rem;
+    }
+
+    .starSVG {
+      width: 2rem;
+      height: auto;
+      fill: $tertiary;
+    }
+  }
+}

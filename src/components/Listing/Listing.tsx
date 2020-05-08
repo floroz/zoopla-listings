@@ -1,32 +1,22 @@
 import React from "react";
+import ImgPreview from "./ImgPreview/ImgPreview";
+import Details from "./Details/Details";
+import BottomBar from "./BottomBar/BottomBar";
 import { IPropertyListing } from "../../interfaces";
 import styles from "./Listing.module.scss";
-import { ReactComponent as StarSVG } from "../../icons/star.svg";
 
 interface Props {
   property: IPropertyListing;
 }
 
 const Listing = ({ property }: Props) => {
-  let date = new Date(property.listed).toLocaleDateString();
-
   return (
     <div className={styles.container}>
       <div className={styles.listing}>
-        <div>
-          <img src={property.images[0]} alt="property" className={styles.img} />
-        </div>
-        <div>Information</div>
+        <ImgPreview images={property.images} />
+        <Details property={property} />
       </div>
-      <div className={styles.bottomBar}>
-        <div className={styles.date}>
-          <span>Listed on: {date}</span>
-        </div>
-        <div className={styles.save}>
-          <StarSVG className={styles.starSVG} />
-          <span>Save </span>
-        </div>
-      </div>
+      <BottomBar listed={property.listed} />
     </div>
   );
 };
