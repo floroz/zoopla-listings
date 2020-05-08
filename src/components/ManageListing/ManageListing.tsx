@@ -9,7 +9,6 @@ interface Props {}
 
 const ManageListing = (props: Props) => {
   const { properties, retryFetch, loading, error } = usePropertyListing();
-
   return (
     <main className={styles.main}>
       <header className={styles.header}>
@@ -19,7 +18,9 @@ const ManageListing = (props: Props) => {
         {!loading &&
           !error &&
           properties?.length > 0 &&
-          properties.map((property: IPropertyListing) => <Listing />)}
+          properties.map((property: IPropertyListing) => (
+            <Listing property={property} key={property.id} />
+          ))}
       </div>
       {loading && <div>Loading...</div>}
       {error && <ErrorHandler retryFetch={retryFetch} error={error} />}

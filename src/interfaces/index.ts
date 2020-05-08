@@ -9,4 +9,5 @@ export interface IPropertyListing {
   description: string;
   expired: boolean;
   images: string[];
+  listed: string;
 }
