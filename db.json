@@ -1,0 +1,40 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "price": 575000,
+      "beds": 3,
+      "type": "flat",
+      "address": "Regency Lodge, Adelaide Road",
+      "city": "London",
+      "postcode": "NW3",
+      "listed": "2020-08-02T23:00:00.000Z",
+      "description": "A spacious first floor three/four bedroom, one/two reception apartment with access to a roof terrace within an Art Deco Mansion Block located a stone’s throw from Swiss Cottage Underground Station. The property could do with some modernisation but benefits from lift access, residents off street parking on a first come first served basis and the services of a 24 Hour porter. Ideal for commuting to the city or getting around town, this property has transport links second to none. Viewings are highly recommended!",
+      "expired": false,
+      "images": [
+        "https://lid.zoocdn.com/645/430/f7ae50ee46b9128e7cd659ef5ae28e227b78c454.jpg",
+        "https://lid.zoocdn.com/645/430/5f22b4ef1947050962e1a02f69a8dd55178ebc45.jpg",
+        "https://lid.zoocdn.com/645/430/03f6402fd5e9e1b87c2af7dd0108f10c5126ff9c.jpg",
+        "https://lid.zoocdn.com/645/430/6b9ca2b3b3e2838933b550de56efc73d3df8e30c.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "price": 550000,
+      "beds": 1,
+      "type": "flat",
+      "address": "Eton Rise, Belsize Park",
+      "city": "London",
+      "postcode": "NW3",
+      "listed": "2020-08-02T23:00:00.000Z",
+      "description": "A 1 bedroom apartment situated on the second floor of a popular purpose built block with lift access and a porter. Offering 612 sq ft of internal accommodation, this bright 1 bedroom apartment is conveniently located between Chalk Farm, Belsize Park and Primrose Hill. There is first come first serve parking as well as permit parking locally. Owing to our commitment to keep both our colleagues and clients safe during this period of recommended isolation, we have many self-serve viewing options available to you. These include video walkthroughs, 360 virtual reality viewings and enhanced comprehensive photography. Eton College Road is 0.2 miles from Chalk Farm Underground Station Northern Line and 0.9 miles from Swiss Cottage Underground Station Jubilee Line. The amenities on England's Lane and Primrose Hill are within walking distance.",
+      "expired": false,
+      "images": [
+        "https://lid.zoocdn.com/645/430/4d8032bac1fc7b21803567011a52b51cce9f997a.jpg",
+        "https://lid.zoocdn.com/645/430/f0377ddbd3ae25d36a537bc570033c87f5050434.jpg",
+        "https://lid.zoocdn.com/645/430/d42e327d96a48d1b826d6a93706ebc96f56ec8f2.jpg",
+        "https://lid.zoocdn.com/645/430/f4342aa4f1d2aea1d2c370531a9e114c8617cdac.jpg"
+      ]
+    }
+  ]
+}
