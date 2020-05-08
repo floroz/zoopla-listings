@@ -15,6 +15,7 @@ const ManageListing = (props: Props) => {
     error,
     showExpired,
     showLive,
+    showAll,
   } = usePropertyListing();
 
   return (
@@ -25,7 +26,7 @@ const ManageListing = (props: Props) => {
       <div className={styles.buttonGroup}>
         <button onClick={showExpired}>Show Expired Listings</button>
         <button onClick={showLive}>Show Live Listings</button>
-        <button onClick={retryFetch}>Show All</button>
+        <button onClick={showAll}>Show All Listings</button>
       </div>
       <div>
         {!loading &&

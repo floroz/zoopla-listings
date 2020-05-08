@@ -10,6 +10,7 @@ enum FetchProperties {
   ERROR = "ERROR",
   SHOW_EXPIRED = "SHOW_EXPIRED",
   SHOW_LIVE = "SHOW_LIVE",
+  SHOW_ALL = "SHOW_ALL",
 }
 
 interface IAction {
@@ -18,12 +19,14 @@ interface IAction {
 }
 
 interface IPropertyListingState {
+  cachedProperties: null | IPropertyListing[];
   properties: null | IPropertyListing[];
   loading: boolean;
   error: null | string;
 }
 
 const initialState: IPropertyListingState = {
+  cachedProperties: null,
   properties: null,
   loading: false,
   error: null,
@@ -41,6 +44,7 @@ function reducer(state: IPropertyListingState = initialState, action: IAction) {
         ...state,
         loading: false,
         properties: action.payload,
+        cachedProperties: action.payload,
       };
     case FetchProperties.ERROR:
       return {
@@ -51,13 +55,22 @@ function reducer(state: IPropertyListingState = initialState, action: IAction) {
     case FetchProperties.SHOW_EXPIRED:
       return {
         ...state,
-        properties: state.properties?.filter((prop) => prop.expired),
+        properties: state.cachedProperties?.filter((prop) => prop.expired),
       };
     case FetchProperties.SHOW_LIVE:
       return {
         ...state,
-        properties: state.properties?.filter((prop) => !prop.expired),
+        properties: state.cachedProperties?.filter((prop) => !prop.expired),
       };
+    case FetchProperties.SHOW_ALL:
+      if (state.cachedProperties) {
+        return {
+          ...state,
+          properties: [...state.cachedProperties],
+        };
+      } else {
+        return state;
+      }
     default:
       return state;
   }
@@ -75,6 +88,12 @@ const usePropertyListing = () => {
   const showLive = () => {
     dispatch({
       type: FetchProperties.SHOW_LIVE,
+    });
+  };
+
+  const showAll = () => {
+    dispatch({
+      type: FetchProperties.SHOW_ALL,
     });
   };
 
@@ -109,6 +128,7 @@ const usePropertyListing = () => {
     error: state.error,
     showExpired,
     showLive,
+    showAll,
   };
 };
 
