@@ -1,0 +1,29 @@
+@import "../../../variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+
+  .bedBox,
+  .bathBox,
+  .livingBox {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    justify-content: space-between;
+    width: 3rem;
+  }
+
+  .bed,
+  .armchair,
+  .bathtub {
+    width: 1.6rem;
+    fill: $text;
+    height: auto;
+  }
+
+  span {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+}

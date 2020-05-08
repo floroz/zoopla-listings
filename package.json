@@ -18,12 +18,11 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start:client": "react-scripts start",
+    "start:json": "json-server --port 4000 --watch db.json",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start:json": "json-server --port 4000 --watch db.json",
-    "start": "yarn start:json && yarn start:client"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

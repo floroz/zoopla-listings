@@ -1,18 +1,24 @@
 @import "../../../variables.scss";
 
 .details {
-  padding: 2rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 
-  h5 {
-    font-size: 1.5rem;
-    color: $primary;
-    margin-bottom: 0.5rem;
-  }
+  .price {
+    h5 {
+      font-size: 1.5rem;
+      color: $primary;
+      margin-bottom: 0.5rem;
+    }
 
-  h6 {
-    font-size: 2.5rem;
-    color: $primary;
-    margin-bottom: 0.7rem;
+    h6 {
+      font-size: 2.5rem;
+      color: $primary;
+      margin-bottom: 0.7rem;
+    }
   }
 
   .info {
@@ -27,5 +33,14 @@
     font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 0.4rem;
+  }
+
+  button {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $text;
+    background-color: $grey;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
   }
 }

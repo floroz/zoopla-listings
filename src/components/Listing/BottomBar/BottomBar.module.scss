@@ -7,6 +7,7 @@
   align-items: center;
   padding: 2rem;
   background-color: white;
+  border: 2px solid $grey;
 
   .date span {
     font-size: 1.5rem;
@@ -18,7 +19,7 @@
 
     span {
       color: $tertiary;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: 700;
       margin-left: 1rem;
     }

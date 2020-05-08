@@ -1,3 +1,32 @@
-.img {
-  max-width: 100%;
+.container {
+  position: relative;
+
+  .img {
+    max-width: 100%;
+    min-width: 15rem;
+  }
+
+  .camera {
+    position: absolute;
+    width: 6.5rem;
+    bottom: 5%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+    .svg {
+      fill: white;
+      width: 1.6rem;
+      height: auto;
+    }
+
+    span {
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
 }
