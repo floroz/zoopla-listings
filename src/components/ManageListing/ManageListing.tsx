@@ -19,7 +19,7 @@ const ManageListing = (props: Props) => {
   } = usePropertyListing();
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} data-testid="manage-listing">
       <header className={styles.header}>
         <h1>Manage Listings</h1>
       </header>
