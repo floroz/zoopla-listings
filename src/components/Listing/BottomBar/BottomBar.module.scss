@@ -9,9 +9,17 @@
   background-color: white;
   border: 2px solid $grey;
 
+  @media only screen and (max-width: 500px) {
+    padding: 1rem;
+  }
+
   .date span {
     font-size: 1.5rem;
     color: $text;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 1.35rem;
+    }
   }
   .save {
     display: flex;
@@ -22,12 +30,19 @@
       font-size: 1.5rem;
       font-weight: 700;
       margin-left: 1rem;
+
+      @media only screen and (max-width: 500px) {
+        font-size: 1.35rem;
+      }
     }
 
     .starSVG {
       width: 2rem;
       height: auto;
       fill: $tertiary;
+      @media only screen and (max-width: 500px) {
+        width: 1.7rem;
+      }
     }
   }
 }

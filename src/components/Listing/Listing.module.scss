@@ -5,6 +5,11 @@
   background-color: $grey;
   max-width: 85rem;
   min-width: 45rem;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: 900px) {
+    max-width: 60rem;
+  }
 
   @media only screen and (max-width: 500px) {
     padding: 0;
@@ -20,7 +25,7 @@
 
     @media only screen and (max-width: 900px) {
       grid-template-columns: 1fr;
-      grid-template-rows: minmax(min-content, 30rem) 1fr;
+      grid-template-rows: auto;
     }
   }
 }
