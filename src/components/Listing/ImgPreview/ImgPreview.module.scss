@@ -35,6 +35,10 @@
     padding: 0.5rem;
     border-radius: 5px;
 
+    @media only screen and (max-width: 500px) {
+      bottom: 10%;
+    }
+
     .svg {
       fill: white;
       width: 1.6rem;
