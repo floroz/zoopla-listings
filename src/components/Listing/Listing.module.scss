@@ -8,7 +8,7 @@
 
   .listing {
     display: grid;
-    grid-template-columns: minmax(min-content, 40rem) 1fr;
+    grid-template-columns: minmax(min-content, 35rem) 1fr;
     grid-template-rows: 1fr;
     background-color: white;
     border: 2px solid $grey;
