@@ -2,9 +2,11 @@
 
 .home {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: stretch;
   background-color: $grey;
 }
 
