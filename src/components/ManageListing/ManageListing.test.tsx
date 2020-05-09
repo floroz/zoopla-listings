@@ -22,11 +22,11 @@ describe("<ManageListings />", () => {
   test("should render without error ", async () => {
     fetchMock.mockResponse(() => Promise.resolve(JSON.stringify(jsonResponse)));
 
-    let wrapper: RenderResult = renderFn(<ManageListings />);
+    let { getByTestId }: RenderResult = renderFn(<ManageListings />);
 
     await wait();
 
-    expect(wrapper.getByTestId(/manage-listing/i)).toBeDefined();
+    expect(getByTestId(/manage-listing/i)).toBeDefined();
   });
 
   test("should correctly call the api once to fetch the properties", async () => {
